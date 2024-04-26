@@ -3,6 +3,8 @@
 
 #include "hittable.h"
 #include "rt_general.h"
+
+
 #include <vector>
 
 
@@ -20,7 +22,7 @@ class hittable_list : public hittable {
             objects.push_back(object);
         }
 
-        bool hit(const ray& r, double ray_tmin, double ray_tmax, hit_record& rec) {
+        bool hit(const ray& r, double ray_tmin, double ray_tmax, hit_record& rec) const override {
             hit_record temp_rec;
             bool hit_anything = false;
             auto closest_so_far = ray_tmax;

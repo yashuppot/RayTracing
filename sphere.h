@@ -45,4 +45,4 @@ class sphere : public hittable {
         point3 center;
         double radius;
 };
-#sendif
+#endif

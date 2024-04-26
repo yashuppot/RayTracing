@@ -2,7 +2,7 @@
 #define COLOR_H
 
 #include "vec3.h"
-#include <iostream>
+#include "rt_general.h"
 
 using color = vec3;
 
